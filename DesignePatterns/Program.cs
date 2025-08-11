@@ -1,5 +1,6 @@
-﻿#region Creantional
-
+﻿
+#region Creantional
+Console.WriteLine("For check the creantional Patterns Check the creantional folder ");
 #region Singelton
 
 //using DesignePatterns.CreationalPatterns.Singelton;
@@ -45,9 +46,9 @@
 
 #region AbstractFactory
 
-using DesignePatterns.CreationalPatterns.AbstractFactory;
-using DesignePatterns.CreationalPatterns.Builder;
-using DesignePatterns.CreationalPatterns.Prototype;
+//using DesignePatterns.CreationalPatterns.AbstractFactory;
+//using DesignePatterns.CreationalPatterns.Builder;
+//using DesignePatterns.CreationalPatterns.Prototype;
 
 //Console.WriteLine("Choose Theme: Dark / Light");
 //string theme = Console.ReadLine();
