@@ -1,6 +1,8 @@
 ﻿
 #region Creantional
-Console.WriteLine("For check the creantional Patterns Check the creantional folder ");
+
+//Console.WriteLine("For check the creantional Patterns Check the creantional folder ");
+
 #region Singelton
 
 //using DesignePatterns.CreationalPatterns.Singelton;
@@ -68,6 +70,7 @@ Console.WriteLine("For check the creantional Patterns Check the creantional fold
 #endregion
 
 #region Builder
+//using DesignePatterns.CreationalPatterns.Builder;
 
 //var builder = new PizzaBuilder();
 
@@ -89,6 +92,5 @@ Console.WriteLine("For check the creantional Patterns Check the creantional fold
 //Console.WriteLine("Original: " + original);
 //Console.WriteLine("Copy: " + copy);
 #endregion
-
 
 #endregion
