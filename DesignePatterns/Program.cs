@@ -94,3 +94,96 @@
 #endregion
 
 #endregion
+
+#region StructuralPatterns
+
+#region Adapter
+
+//using DesignePatterns.StructuralPatterns.Adapter;
+//ExternalUserApi externalApi = new ExternalUserApi();
+//IUserService userService = new UserServiceAdapter(externalApi);
+//Console.WriteLine(userService.GetUserName());
+#endregion
+
+#region Facade
+
+//using DesignePatterns.StructuralPatterns.Facade;
+
+//var light = new LightSystem();
+//var ac = new AirConditioningSystem();
+//var security = new SecuritySystem();
+
+//var homeFacade = new SmartHomeFacade(light, ac, security);
+
+//homeFacade.LeaveHome();
+//Console.WriteLine();
+
+//homeFacade.ArriveHome();
+#endregion
+
+#region Composite 
+
+//using DesignePatterns.StructuralPatterns.Composite;
+
+//var file1 = new Filee("file1.txt");
+//var file2 = new Filee("file2.txt");
+//var file3 = new Filee("file3.text");
+
+//var folder1 = new Folder("Documents");
+//folder1.Add(file1);
+//folder1.Add(file2);
+
+//var folder2 = new Folder("MyFolder");
+//folder2.Add(folder1);
+//folder2.Add(new Filee("file3.txt"));
+
+//var folder3 = new Folder("Basefolder");
+//folder3.Add(folder2);
+//folder3.Add(file3);
+
+//folder3.Display(0);
+//Console.ReadKey();
+#endregion
+
+#region  Decorator
+
+//using DesignePatterns.StructuralPatterns.Decorator;
+
+//IOrder order = new BasicOrder();
+
+//order = new DiscountDecorator(order);
+//order = new NotificationDecorator(order);
+
+//order.ProcessOrder();
+#endregion
+
+#region Flyweight 
+
+//var factory = new DesignePatterns.StructuralPatterns.Flyweight.CharacterFactory();
+//var document = "HELLO FLYWEIGHT";
+
+//for (int i = 0; i < document.Length; i++)
+//{
+//    var character = factory.GetCharacter(document[i]);
+//    character.Display(i);
+//}
+#endregion
+
+#region Proxy 
+
+//using DesignePatterns.StructuralPatterns.Proxy;
+
+//IFile file = new ProxyFile("test_file.pdf");
+
+//// Load the real file
+//file.Display();
+
+//// just show file 
+//file.Display();
+#endregion
+
+#region Bridge
+
+#endregion
+
+#endregion

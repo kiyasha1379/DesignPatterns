@@ -1,0 +1,6 @@
+﻿
+
+namespace DesignePatterns.StructuralPatterns.Bridge
+{
+
+}
