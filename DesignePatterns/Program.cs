@@ -187,3 +187,135 @@
 #endregion
 
 #endregion
+
+#region Behavioral
+
+#region ChainOfResponsibility
+//using DesignePatterns.Behavioral.ChainOfResponsibility;
+
+//var error = new ErrorHandler();
+//var warning = new WarningHandler();
+//var info = new InfoHandler();
+//var nothing = new NotHandler();
+
+//error.SetNext(warning);
+//warning.SetNext(info);
+//info.SetNext(nothing);
+
+//error.Handle("Warning"); 
+//error.Handle("Info");    
+//error.Handle("Debug");  
+
+#endregion
+
+#region Command
+//using DesignePatterns.Behavioral.Command;
+
+//var light = new Light();
+//var lightOn = new LightOnCommand(light);
+//var lightOff = new LightOffCommand(light);
+
+//var remote = new RemoteControl();
+
+//remote.SetCommand(lightOn);
+//remote.PressButton(); 
+//remote.PressUndo();   
+
+//remote.SetCommand(lightOff);
+//remote.PressButton(); 
+//remote.PressUndo();
+#endregion
+
+#region Observer
+
+//using DesignePatterns.Behavioral.Observer;
+//var agency = new NewsAgency();
+
+//var sub1 = new Subscriber("Alice");
+//var sub2 = new Subscriber("Bob");
+
+//// Subscribe به event
+//agency.NewsPublished += sub1.ReceiveNews;
+//agency.NewsPublished += sub2.ReceiveNews;
+
+//agency.PublishNews("New .NET version released!");
+#endregion
+
+#region Strategy
+
+//using DesignePatterns.Behavioral.Strategy;
+
+//var cart = new ShoppingCart();
+
+//// انتخاب استراتژی در زمان اجرا
+//cart.SetPaymentStrategy(new CreditCardPayment());
+//cart.Checkout(100);
+
+//cart.SetPaymentStrategy(new PayPalPayment());
+//cart.Checkout(200);
+#endregion
+
+#region State
+
+//var atm = new ATM();
+//atm.InsertCard();
+//atm.WithdrawMoney(100);
+//atm.EjectCard();
+#endregion
+
+#region Template
+
+//ReportGenerator dbReport = new DatabaseReport();
+//dbReport.GenerateReport();
+
+//ReportGenerator fileReport = new FileReport();
+//fileReport.GenerateReport();
+#endregion
+
+#region Iterator
+
+//var names = new NameCollection();
+//var iterator = names.CreateIterator();
+
+//while (iterator.HasNext())
+//    Console.WriteLine(iterator.Next());
+#endregion
+
+#region Mediator
+//using DesignePatterns.Behavioral.Mediator;
+
+//IChatMediator mediator = new ChatMediator();
+
+//User user1 = new ChatUser(mediator, "Ali");
+//User user2 = new ChatUser(mediator, "Sara");
+//User user3 = new ChatUser(mediator, "Reza");
+
+//mediator.AddUser(user1);
+//mediator.AddUser(user2);
+//mediator.AddUser(user3);
+
+//user1.Send("سلام به همه!");
+#endregion
+
+#region Memento
+//using DesignePatterns.Behavioral.Memento;
+
+//var editor = new TextEditor();
+//var history = new History();
+
+//editor.SetText("Hello");
+//history.Save(editor);
+
+//editor.SetText("Hello World");
+//history.Save(editor);
+
+//Console.WriteLine(editor.GetText()); // Hello World
+
+//history.Undo(editor);
+//Console.WriteLine(editor.GetText()); // Hello
+
+//history.Undo(editor);
+//Console.WriteLine(editor.GetText()); // ( )
+#endregion
+
+#endregion
